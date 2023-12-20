@@ -1,0 +1,33 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  min-height: 100vh;
+  line-height: 1;
+  text-rendering: optimizeSpeed;
+  background: #33007b;
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: #31004a;
+  /* width: 100%; */
+  padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.name {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  font-style: italic;
+  color: #8300c4;
+  transition: ease-in-out 200ms;
+}
+
+.name:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 20px #ab00ff;
+  color: #ab00ff;
+}
