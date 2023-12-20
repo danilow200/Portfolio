@@ -3,18 +3,61 @@ body {
   min-height: 100vh;
   line-height: 1;
   text-rendering: optimizeSpeed;
-  background: #33007b;
+  /* background: #33007b; */
+  background: url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
   padding: 0;
   margin: 0;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #31004a; 
+}
+
+::-webkit-scrollbar-thumb {
+  background: #8300c4;
+  border-radius: 10px;
+  transition: ease-in-out 200ms;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #c146ff;
+}
+
 
 .header {
   display: flex;
   justify-content: space-between;
   background: #31004a;
   /* width: 100%; */
-  padding: 10px;
+  padding: 10px 20px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.sub-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  color: #8300c4;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.sub-header a{
+  transition: ease-in-out 200ms;
+}
+
+.sub-header a:hover {
+  cursor: pointer;
+  text-shadow: 1px 1px 20px #c146ff;
+  color: #c146ff;
 }
 
 .name {
@@ -28,6 +71,24 @@ body {
 
 .name:hover {
   cursor: pointer;
-  text-shadow: 1px 1px 20px #ab00ff;
-  color: #ab00ff;
+  text-shadow: 1px 1px 20px #c146ff;
+  color: #c146ff;
+}
+
+.container {
+  display: flex;
+  margin: 20px;
+  background: red;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background: #31004a;
+  color: #8300c4;
+  margin-top: 800px;
+  font-weight: 600;
+  font-size: 16px;
 }
