@@ -14,16 +14,39 @@
   </head>
   <body>
     <main>
-			<div class="header">
+			<div class="header" id="header">
 				<span class="name">Danilo</span>
         <div class="sub-header">
-          <a>Sobre</a>
+          <a href="#sobre1">Sobre</a>
           <a>Habilidades</a>
           <a>Projetos</a>
           <a>Contato</a>
         </div>
 			</div>
       <div class="container">
+        <div id="sobre1"></div>
+        <div class="sobre">
+          <div class="sobre-img">
+            <img src="./assets/eu.jpeg" width="250px" height="250px" />
+          </div>
+          <div class="sobre-text">
+            <h2>DANILO DOMINGO VITORIANO SILVA</h2>
+            <span>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus neque ac ex consectetur, id sodales elit rutrum. Nulla ut sagittis elit. Proin imperdiet aliquet gravida. Etiam ac tincidunt eros. Etiam mattis risus in gravida varius. Donec suscipit orci vitae erat pulvinar ornare. Sed egestas lacus luctus ipsum venenatis, ac consectetur elit maximus. Etiam sed mi eget ligula pellentesque varius. Nullam gravida sed tellus a finibus. Nullam rutrum eget urna vel malesuada. Curabitur ut rutrum dui, at egestas lorem.
+            </span>
+          </div>
+        </div>
+        <div class="container-text">
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus neque ac ex consectetur, id sodales elit rutrum. Nulla ut sagittis elit. Proin imperdiet aliquet gravida. Etiam ac tincidunt eros. Etiam mattis risus in gravida varius. Donec suscipit orci vitae erat pulvinar ornare. Sed egestas lacus luctus ipsum venenatis, ac consectetur elit maximus. Etiam sed mi eget ligula pellentesque varius. Nullam gravida sed tellus a finibus. Nullam rutrum eget urna vel malesuada. Curabitur ut rutrum dui, at egestas lorem.
+          </span>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus neque ac ex consectetur, id sodales elit rutrum. Nulla ut sagittis elit. Proin imperdiet aliquet gravida. Etiam ac tincidunt eros. Etiam mattis risus in gravida varius. Donec suscipit orci vitae erat pulvinar ornare. Sed egestas lacus luctus ipsum venenatis, ac consectetur elit maximus. Etiam sed mi eget ligula pellentesque varius. Nullam gravida sed tellus a finibus. Nullam rutrum eget urna vel malesuada. Curabitur ut rutrum dui, at egestas lorem.
+          </span>
+          <span>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque faucibus neque ac ex consectetur, id sodales elit rutrum. Nulla ut sagittis elit. Proin imperdiet aliquet gravida. Etiam ac tincidunt eros. Etiam mattis risus in gravida varius. Donec suscipit orci vitae erat pulvinar ornare. Sed egestas lacus luctus ipsum venenatis, ac consectetur elit maximus. Etiam sed mi eget ligula pellentesque varius. Nullam gravida sed tellus a finibus. Nullam rutrum eget urna vel malesuada. Curabitur ut rutrum dui, at egestas lorem.
+          </span>
+        </div>
       </div>
       <div class="footer">
         Created By Danilo_Sunday
@@ -31,4 +54,20 @@
     </main>
 	<script src="index.js"></script>
   </body>
+
+  <script>
+    window.onscroll = function() {myFunction()};
+    
+    var header = document.getElementById("header");
+    var sticky = header.offsetTop;
+    
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+
 </html>
