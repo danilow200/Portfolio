@@ -138,6 +138,8 @@ a {
 }
 
 .footer {
+  position: fixed;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -148,6 +150,7 @@ a {
   margin-top: 400px;
   font-weight: 600;
   font-size: 16px;
+  width: 100%;
 }
 
 #sobre1  {
