@@ -108,8 +108,9 @@ a {
 .sobre-img {
   background: rgba(193,70,255, 0.45);
   backdrop-filter: blur(25px);
+  height: 250px;
   padding: 10px;
-  border-radius: 20px;
+  border-radius: 16px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
