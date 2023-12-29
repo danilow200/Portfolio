@@ -32,8 +32,24 @@ body {
   }    
 }
 
+@keyframes float {
+	0% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+	50% {
+		box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+		transform: translatey(-20px);
+	}
+	100% {
+		box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+		transform: translatey(0px);
+	}
+}
+
 a {
   all: unset;
+  cursor: pointer;
 }
 
 ::-webkit-scrollbar {
@@ -60,7 +76,7 @@ a {
   justify-content: space-between;
   background: #31004a;
   width: 100%;
-  padding: 10px 20px;
+  padding: 10px 40px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   z-index: 1;
   -webkit-box-sizing: border-box; 
@@ -73,19 +89,6 @@ a {
   justify-content: center;
   align-items: center;
   gap: 16px;
-  color: #8300c4;
-  font-weight: 700;
-  font-size: 24px;
-}
-
-.sub-header a{
-  transition: ease-in-out 200ms;
-}
-
-.sub-header a:hover {
-  cursor: pointer;
-  color: #fff;
-  text-shadow: 0px 0px 40px #fff;
 }
 
 .name {
@@ -137,14 +140,35 @@ a {
 .sobre-text {
   background: rgba(193,70,255, 0.45);
   backdrop-filter: blur(25px);
-  padding: 10px;
+  padding: 10px 20px 24px;
   border-radius: 20px;
   color: #FFF;
   font-size: 16px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  line-height: 24px;
+}
+
+.sobre-text img {
+  border: 2px white solid;
+  border-radius: 50%;
+	overflow: hidden;
+	box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+	transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  img { width: 100%; height: auto; }
 }
 
 .container-text {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.contato-link {
+  padding: 20px;
+}
+
+/* .box-text {
   background: rgba(193,70,255, 0.45);
   backdrop-filter: blur(25px);
   padding: 20px;
@@ -152,7 +176,7 @@ a {
   color: #FFF;
   font-size: 16px;
   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
-}
+} */
 
 .footer {
   position: fixed;
@@ -163,7 +187,7 @@ a {
   padding: 10px;
   background: #31004a;
   text-shadow: 0px 0px 20px #c146ff;
-  color: #fff;
+  color: #c146ff;
   margin-top: 400px;
   font-weight: 600;
   font-size: 16px;
